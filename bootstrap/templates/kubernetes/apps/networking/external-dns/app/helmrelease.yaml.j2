@@ -16,7 +16,10 @@ spec:
         namespace: flux-system
   maxHistory: 2
   install:
+<<<<<<< HEAD
     createNamespace: true
+=======
+>>>>>>> template/main
     remediation:
       retries: 3
   upgrade:
@@ -35,7 +38,11 @@ spec:
             name: external-dns-secret
             key: api-token
     extraArgs:
+<<<<<<< HEAD
       - --annotation-filter=external-dns.alpha.kubernetes.io/target
+=======
+      - --ingress-class=external
+>>>>>>> template/main
       - --cloudflare-proxied
       - --crd-source-apiversion=externaldns.k8s.io/v1alpha1
       - --crd-source-kind=DNSEndpoint
