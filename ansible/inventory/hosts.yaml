@@ -1,0 +1,19 @@
+---
+kubernetes:
+  children:
+    master:
+      hosts:
+        hephaestus:
+          ansible_user: ragnok
+          ansible_host: 172.30.30.51
+        hippolytus:
+          ansible_user: ragnok
+          ansible_host: 172.30.30.52
+        hermes:
+          ansible_user: ragnok
+          ansible_host: 172.30.30.53
+    worker:
+      hosts:
+        achilles:
+          ansible_user: ragnok
+          ansible_host: 172.30.30.55
